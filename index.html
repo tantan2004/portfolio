@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       TANVI 
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d16c40b707.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo" >
+            <ul>
+              <li><a href="#header">HOME</a></li>  
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#project">MY PROJECTS</a></li>  
+              <li><a href="#contact">CONTACT</a></li>             
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Hello.</p>
+            <h1>I'm <span>Tanvi</span></h1>
+        </div>
+
+    </div>
+ </div>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="x" >About Me</h1>
+                <p class="y">Tanvi Gudiseva.I am student currently pursuing BTECH in Computer Science from VIT Vellore.I've always been fascinated by the intersection of technology and creativity. From an early age, I found myself drawn to computers, intrigued by their ability to transform ideas into tangible solutions. This curiosity led me to pursue a degree in Computer Science and Engineering, where I've immersed myself in the study of algorithms, programming languages, and the endless possibilities of software development.  
+                    My journey in CSE has been one of continuous learning and growth. I've delved into various programming languages, including Python, Java, and C++, honing my skills through hands-on projects and coursework.</p>
+                <div class="tabs">
+                    <p class="links active-link" onclick="opentab('education')">Education</p>
+                    <p class="links" onclick="opentab('skills')">Skills</p>
+                
+                </div>
+                <div class="content active-tab" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>BTECH in Computer Science from VIT Vellore</li>
+                        <li><span>2020-2022</span><br>XII Standard:98%</li>
+                        <li><span>2019-2020</span><br>X Standard:94%</li>
+                    </ul>
+                </div>
+                
+                <div class="content" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>CSS HTML JS</li>
+                        <li><span>Object Oriented Programming</span><br>C C++ Java</li>
+                        <li><span>Machine learning</span><br>Python Django</li>
+                        <li><span>UI/UX</span><br>React Angular Vue</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+ </div>
+ <div id="project">
+    <div class="container">
+        <h1 class="x">My Projects</h1><br><br><br><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="p1.png">
+                <div class="layer">
+                <h3>Dictionary App</h3>
+                <p>A dictionary app, a digital lexicon at our fingertips,
+                    Where words come alive with just a tap, no more slips
+                </p>
+                <a href="https://tantan2004.github.io/dictionaryapp/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+
+
+            </div>
+            <div class="work">
+                <img src="p2.png">
+                <div class="layer">
+                    <h3>Color Changer</h3>
+                    <p> This interactive web element allows users to input a color value, which dynamically updates the background color of a designated box.
+                    </p>
+                    <a href="https://tantan2004.github.io/colorchanger/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+           
+            </div>
+        </div>
+       
+    </div>
+ </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">
+                    Contact Me
+                </h1>
+                <p><i class="fa-solid fa-envelope"></i></i>tanvi.gudiseva@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+918790351423</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tanvi-gudiseva-aa796a247/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/tanvi1809"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+    </div>
+
+
+ </div>
+ <script>
+    var tabcontents=document.getElementsByClassName("content");
+    var tablinks=document.getElementsByClassName("links");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+ </script>
+</body>
+</html>
